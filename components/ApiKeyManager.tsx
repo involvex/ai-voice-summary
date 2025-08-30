@@ -41,9 +41,14 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({ onKeySave, onSignI
                     {isGisReady ? 'Sign in with Google' : 'Loading...'}
                 </button>
             ) : (
-                <div className="bg-yellow-500/20 border border-yellow-500 text-yellow-300 p-4 rounded-lg text-center">
-                  <p className="font-semibold">Developer Notice</p>
-                  <p className="text-sm">Google Client ID is not configured. Please add your credentials to the <code>config.ts</code> file to enable Google Sign-In.</p>
+                <div className="bg-yellow-500/20 border border-yellow-500 text-yellow-300 p-4 rounded-lg text-center space-y-2">
+                  <p className="font-semibold">Note for App Deployer</p>
+                  <p className="text-sm">
+                      Google Sign-In is disabled. To enable it, you must add your Google Client ID to the <code>config.ts</code> file.
+                  </p>
+                  <p className="text-sm text-yellow-400/80">
+                      Regular users can proceed with the "Use an API Key" option below.
+                  </p>
                 </div>
             )}
              <button 

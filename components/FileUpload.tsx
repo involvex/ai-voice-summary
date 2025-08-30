@@ -1,13 +1,12 @@
-
 import React, { useRef } from 'react';
 import { UploadIcon } from './icons';
 
 interface FileUploadProps {
   onFileSelect: (file: File | null) => void;
-  selectedFile: File | null;
+  selectedFileName: string | null;
 }
 
-export const FileUpload: React.FC<FileUploadProps> = ({ onFileSelect, selectedFile }) => {
+export const FileUpload: React.FC<FileUploadProps> = ({ onFileSelect, selectedFileName }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -47,9 +46,9 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileSelect, selectedFi
         <span className="flex items-center space-x-2">
             <UploadIcon />
             <span className="font-medium text-gray-400">
-                {selectedFile ? 'File selected: ' : 'Drop files to attach, or '}
-                <span className={selectedFile ? 'font-bold text-blue-400' : 'text-blue-400 underline'}>
-                    {selectedFile ? selectedFile.name : 'browse'}
+                {selectedFileName ? 'File selected: ' : 'Drop files to attach, or '}
+                <span className={selectedFileName ? 'font-bold text-blue-400' : 'text-blue-400 underline'}>
+                    {selectedFileName ? selectedFileName : 'browse'}
                 </span>
             </span>
         </span>

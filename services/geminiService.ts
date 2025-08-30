@@ -1,14 +1,17 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 import type { SummaryResult } from '../types';
 
-if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable is not set.");
-}
+export async function summarizeAudio(
+  base64Audio: string, 
+  mimeType: string, 
+  language: string,
+  apiKey: string
+): Promise<SummaryResult> {
+  if (!apiKey) {
+    throw new Error("Gemini API key is not provided.");
+  }
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
-export async function summarizeAudio(base64Audio: string, mimeType: string, language: string): Promise<SummaryResult> {
+  const ai = new GoogleGenAI({ apiKey });
   const model = "gemini-2.5-flash";
 
   const audioPart = {

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const HeaderIcon: React.FC = () => (
@@ -25,5 +24,32 @@ export const CopyIcon: React.FC = () => (
 export const CheckIcon: React.FC = () => (
     <svg className="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+    </svg>
+);
+
+export const GoogleDriveIcon: React.FC = () => (
+    <svg className="w-6 h-6 mr-2" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#4CAF50" d="M32.1,10H15.9l-7.4,12.9l7.4,12.9h16.2l7.4-12.9L32.1,10z"></path>
+        <path fill="#2E7D32" d="M15.9,35.8l-7.4-12.9L15.9,10h8.1L15.9,35.8z"></path>
+        <path fill="#FFC107" d="M32.1,10l-7.4,12.9l7.4,12.9L40,22.9L32.1,10z"></path>
+        <path fill="#1E88E5" d="M24,22.9l8.1,12.9H15.9L24,22.9z"></path>
+    </svg>
+);
+
+export const KeyIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H5v-2H3v-2H1v-4a6 6 0 016-6h4a6 6 0 016 6z" />
+    </svg>
+);
+
+export const UserIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+    </svg>
+);
+
+export const SignOutIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
     </svg>
 );

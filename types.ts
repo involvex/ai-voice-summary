@@ -8,3 +8,8 @@ export interface SummaryResult {
   summary: string;
   replies: string[];
 }
+
+export interface GoogleUser {
+  id: string;
+  email: string;
+}

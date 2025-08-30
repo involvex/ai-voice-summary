@@ -42,12 +42,18 @@ export const ApiKeyManager: React.FC<ApiKeyManagerProps> = ({ onKeySave, onSignI
                 </button>
             ) : (
                 <div className="bg-yellow-500/20 border border-yellow-500 text-yellow-300 p-4 rounded-lg text-center space-y-2">
-                  <p className="font-semibold">Note for App Deployer</p>
+                  <p className="font-semibold">Google Sign-In Setup Required</p>
                   <p className="text-sm">
-                      Google Sign-In is disabled. To enable it, you must add your Google Client ID to the <code>config.ts</code> file.
+                    To enable Google Sign-In, you need to provide your own Google Client ID.
                   </p>
-                  <p className="text-sm text-yellow-400/80">
-                      Regular users can proceed with the "Use an API Key" option below.
+                   <p className="text-sm">
+                    <a href="https://console.cloud.google.com/apis/credentials" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline font-semibold">
+                      Get credentials from Google Cloud
+                    </a>
+                    &nbsp;and add them to the <code>config.ts</code> file.
+                  </p>
+                  <p className="text-sm text-yellow-400/80 mt-2">
+                      You can still use the app by selecting the "Use an API Key" option below.
                   </p>
                 </div>
             )}

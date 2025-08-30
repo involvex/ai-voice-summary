@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { CopyIcon, CheckIcon } from './icons';
+import { CopyIcon, CheckIcon } from './icons.tsx';
 
 interface SummaryDisplayProps {
   summary: string;

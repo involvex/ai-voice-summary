@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { GOOGLE_DEVELOPER_KEY } from '../config';
-import { GoogleDriveIcon, SignOutIcon } from './icons';
+import { GOOGLE_DEVELOPER_KEY } from '../config.ts';
+import { GoogleDriveIcon } from './icons.tsx';
 
 declare global {
     interface Window {

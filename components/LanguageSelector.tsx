@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { SUPPORTED_LANGUAGES } from '../constants';
+import { SUPPORTED_LANGUAGES } from '../constants.ts';
 
 interface LanguageSelectorProps {
   selectedLanguage: string;

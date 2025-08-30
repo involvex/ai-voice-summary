@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { KeyIcon, GoogleDriveIcon } from './icons';
-import type { GoogleUser } from '../types';
+import { KeyIcon, GoogleDriveIcon } from './icons.tsx';
+import type { GoogleUser } from '../types.ts';
 
 interface ApiKeyManagerProps {
   onKeySave: (key: string) => void;

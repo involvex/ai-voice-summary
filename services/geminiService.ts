@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import type { SummaryResult } from '../types';
+import type { SummaryResult } from '../types.ts';
 
 export async function summarizeAudio(
   base64Audio: string, 

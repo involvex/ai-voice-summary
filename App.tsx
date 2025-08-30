@@ -1,15 +1,15 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { LanguageSelector } from './components/LanguageSelector';
-import { FileUpload } from './components/FileUpload';
-import { SummaryDisplay } from './components/SummaryDisplay';
-import { Loader } from './components/Loader';
-import { ApiKeyManager } from './components/ApiKeyManager';
-import { GoogleDrivePicker } from './components/GoogleDrivePicker';
-import { HeaderIcon, UserIcon } from './components/icons';
-import { summarizeAudio } from './services/geminiService';
-import type { SummaryResult, GoogleUser } from './types';
-import { SUPPORTED_LANGUAGES } from './constants';
-import { GOOGLE_CLIENT_ID } from './config';
+import { LanguageSelector } from './components/LanguageSelector.tsx';
+import { FileUpload } from './components/FileUpload.tsx';
+import { SummaryDisplay } from './components/SummaryDisplay.tsx';
+import { Loader } from './components/Loader.tsx';
+import { ApiKeyManager } from './components/ApiKeyManager.tsx';
+import { GoogleDrivePicker } from './components/GoogleDrivePicker.tsx';
+import { HeaderIcon, UserIcon } from './components/icons.tsx';
+import { summarizeAudio } from './services/geminiService.ts';
+import type { SummaryResult, GoogleUser } from './types.ts';
+import { SUPPORTED_LANGUAGES } from './constants.ts';
+import { GOOGLE_CLIENT_ID } from './config.ts';
 
 type SelectedFile = {
   name: string;

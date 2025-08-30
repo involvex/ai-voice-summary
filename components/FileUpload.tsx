@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { UploadIcon } from './icons';
+import { UploadIcon } from './icons.tsx';
 
 interface FileUploadProps {
   onFileSelect: (file: File | null) => void;

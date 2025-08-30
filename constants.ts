@@ -1,5 +1,5 @@
 
-import type { Language } from './types';
+import type { Language } from './types.ts';
 
 export const SUPPORTED_LANGUAGES: Language[] = [
   { value: 'English', label: 'English' },

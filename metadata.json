@@ -1,0 +1,5 @@
+{
+  "name": "Audio Summarizer AI",
+  "description": "Upload any audio file (like a voice message) and get a quick 2-5 line summary in your chosen language. The app also suggests possible replies you can copy with a single tap.",
+  "requestFramePermissions": []
+}
